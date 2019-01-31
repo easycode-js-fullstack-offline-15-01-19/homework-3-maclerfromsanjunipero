@@ -11,18 +11,13 @@ let newStr ='';
 let arr = str.split(' ');
 
 for (i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-    newStr = arr.join(' ');
+    newStr += arr[i][0].toUpperCase() + arr[i].slice(1) + ' ';
 }
-
+console.log(newStr);
 // ----- Задача 2 -----
 
 str = 'tseb eht ma i';
-arr = str.split('');
-
-arr2 = arr.reverse();
-
-newStr = arr2.join('');
+str = str.split('').reverse().join('');
 
 
 // ----- Задача 3 -----
@@ -42,8 +37,7 @@ str = 'JavaScript is a pretty good language';
 arr = str.split(' ');
 
 for (i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-    newStr = arr.join('');
+    newStr += arr[i][0].toUpperCase() + arr[i].slice(1) + '';
 }
 
 // console.log(newStr);
@@ -53,7 +47,7 @@ for (i = 0; i < arr.length; i++) {
 let iterable = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 for (value of iterable){
-    if (value % 2 > 0){
+    if (value % 2){
         console.log(value);
     }
 }
